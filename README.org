@@ -1,0 +1,5 @@
+* opentelementry tonic
+This library provide `MetadataInjector` and `MetadataExtractor`, which is used to propogate span context from grpc client to grpc server.
+So to put client & server span/event into one bigger span.
+
+
