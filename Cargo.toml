@@ -2,7 +2,7 @@
 name = "opentelemetry-tonic"
 version = "0.1.0"
 edition = "2021"
-
+repository = "https://github.com/shaqtsui/opentelemetry-tonic"
 description = """
 This library provide `MetadataInjector` and `MetadataExtractor`, which is used to propogate span context from grpc client to grpc server.
 So to put client & server span/event into one bigger span.
