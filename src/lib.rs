@@ -85,7 +85,7 @@ pub fn otel_thread_cx_to_req<T>(request: &mut Request<T>){
 		});
 }
 
-		
+
 #[cfg(test)]
 mod tests {
 		use opentelemetry::{global, Context};
@@ -94,7 +94,7 @@ mod tests {
 				export::trace::stdout
 		};
 		use opentelemetry::trace::{Tracer, TraceContextExt};
-		
+
 		use super::MetadataExtractor;
 
 		use super::MetadataInjector;
@@ -128,7 +128,7 @@ mod tests {
 						propagator.extract(&MetadataExtractor(request.metadata()))
 				});
 
-				let span = tracer.start_with_context("server-span", &cx);
-				
+				let _span = tracer.start_with_context("server-span", &cx);
+
     }
 }
